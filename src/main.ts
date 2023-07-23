@@ -1,8 +1,8 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { INestApplication, ValidationPipe } from '@nestjs/common';
+import { ValidationPipe } from '@nestjs/common';
 import { Transport } from '@nestjs/microservices';
-import { protobufPackage } from './order/proto/product.pb';
+import { protobufPackage } from './order/proto/order.pb';
 import { join } from 'path';
 
 async function bootstrap() {
